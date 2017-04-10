@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "author": "ru_shalm <ru_shalm@hazimu.com>",
+  "author": "ru_shalm",
+  "email": "ru_shalm@hazimu.com",
   "license": "MIT",
   "homepage": "https://github.com/rutan/step-trigger",
   "repository": {
@@ -11,9 +12,12 @@
     "url": "git+https://github.com/rutan/step-trigger"
   },
   "files": [
-    "src",
-    "lib"
+    "src/",
+    "lib/"
   ],
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "build": "npm run lint && npm run test && npm run clean && run-s build:*",
     "build:ts": "NODE_ENV=production tsc",
@@ -32,6 +36,5 @@
     "rimraf": "^2.6.1",
     "tslint": "^5.0.0",
     "typescript": "^2.2.2"
-  },
-  "private": true
+  }
 }
