@@ -5,7 +5,7 @@
   "types": "lib/index.d.ts",
   "author": "ru_shalm",
   "email": "ru_shalm@hazimu.com",
-  "license": "MIT",
+  "license": "WTFPL",
   "homepage": "https://github.com/rutan/step-trigger",
   "repository": {
     "type": "git",
