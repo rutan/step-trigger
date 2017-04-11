@@ -21,6 +21,20 @@ describe('StepTrigger', () => {
             trigger.step();
             assert.ok(value);
         });
+
+        it('reserve in reserve', () => {
+            const trigger = new StepTrigger();
+            let value = false;
+            trigger.reserve(2, () => trigger.reserve(2, () => value = true));
+            trigger.step();
+            assert.ok(!value);
+            trigger.step();
+            assert.ok(!value);
+            trigger.step();
+            assert.ok(!value);
+            trigger.step();
+            assert.ok(value);
+        });
     });
 });
 
